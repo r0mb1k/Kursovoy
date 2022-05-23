@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <link rel="icon" type="image/png" sizes="32x32" href="IMG/logo.svg">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="CSS/main.css" />
+   <title>Meridian Airlines</title>
+</head>
+
+<body>
+   <div class="modals">
+      <div class="modal-overlay">
+         <div class="modal modal--1" data-target="form-popup">
+            <h1 class="reg">Регистрация</h1>
+            <div class="form2">
+               <div class="input1">
+                  <input class="inputt" type="text" placeholder="Имя" />
+               </div>
+               <div class="input1">
+                  <input class="inputt" type="email" placeholder="Электронная почта" />
+               </div>
+               <div class="input1">
+                  <input class="inputt" type="password" placeholder="Пароль" />
+               </div>
+               <div class="input1">
+                  <input class="inputt" type="password" placeholder="Подтвердите пароль" />
+               </div>
+               <div class="input1">
+                  <input class="inputtr" type="submit" onClick="window.location.reload();" value="Регистрация" />
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="wrap">
+      <header class="header">
+         <div class="wrapper">
+            <div class="header_item">
+               <div class="burger">
+                  <div class="containers">
+                     <div class="bar1"></div>
+                     <div class="bar2"></div>
+                     <div class="bar3"></div>
+                  </div>
+               </div>
+               <div class="logo">
+                  <a href="index.html">
+                     <img src="IMG/logo.svg" alt="logo" />
+                     <h1 class="header_logo_title">Meridian Airlines</h1>
+                  </a>
+               </div>
+
+               <div class="zatem">
+                  <div class="okno">
+                     <p></p>
+                     <p><a></a></p>
+                  </div>
+               </div>
+
+               <div class="login">
+                  <a class="btnn" data-path="form-popup" href="#zatem">
+                     <img src="IMG/icons/user.svg" alt="user" />
+                     <p>Войти</p>
+                  </a>
+               </div>
+
+
+
+            </div>
+            <div class="header_main">
+               <h1 class="title_header_main">Быстро, красиво, удобно</h1>
+               <p class="header_main_description">
+                  Покупка билетов на рейсы Meridian Airlines онлайн в несколько
+                  кликов.
+               </p>
+               <div class="header_btn">
+                  <button class="btn buy_ticket">Купить билеты</button>
+               </div>
+            </div>
+            <div class="header_icons">
+               <a href="https://vk.com/feed"> <img src="IMG/icons/vk.svg" alt="VK" /></a>
+               <a href="https://www.instagram.com/"> <img src="IMG/icons/instagram.svg" alt="instagram" /> </a>
+               <a href="https://www.facebook.com/"> <img src="IMG/icons/facebook.svg" alt="facebook" /></a>
+            </div>
+         </div>
+      </header>
+      <div class="menu">
+         <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a class="buy_ticket">Покупка билетов</a></li>
+            <li><a class="way">Направления</a></li>
+            <li><a class="stok_btn">Акции</a></li>
+            <li><a class="news_btn">Новости</a></li>
+            <li><a class="contact_btn">Контакты</a></li>
+         </ul>
+
+      </div>
+      <main class="main">
+         <div class="wrapper">
+            <form>
+            <h1 class="title_main">Покупка билетов</h1>
+            <div class="radio">
+               <input type="radio" name="1" />Туда и обратно <input name="1" type="radio" />В одну
+               сторону
+            </div>
+            <div class="forms">
+               <div class="form">
+                  <div class="input">
+                     <input type="text" placeholder="Откуда" />
+                  </div>
+                  <div class="input">
+                     <img src="IMG/calendar-svgrepo-com 1.svg" alt="calendar" />
+                     <input type="date" placeholder="Туда" />
+                  </div>
+                  <div class="input">
+                     <select>
+                        <option>Эконом</option>
+                        <option>Бизнес</option>
+                     </select>
+                  </div>
+               </div>
+               <!-- <div class="arrows">
+               <img src="IMG/icons/Arrow 1.svg" alt="arrows">
+               <img src="IMG/Arrow 2.svg" alt="arrows">
+            </div> -->
+               <div class="form">
+                  <div class="input">
+                     <input type="text" placeholder="Куда" />
+                  </div>
+                  <div class="input">
+                     <img src="IMG/calendar-svgrepo-com 1.svg" alt="calendar" />
+                     <input type="date" placeholder="Обратно" />
+                  </div>
+                  <div class="input">
+                     <input type="text" placeholder="Промокод">
+                  </div>
+               </div>
+            </div>
+            <div class="radio">
+               <input type="radio" name="2" /> Лечу по работе
+               <input type="radio" name="2"> Лечу с питомцем
+               <input type="radio" name="2" class="mil"> Оплата с милями
+            </div>
+            <div class="btn_main" onclick="ticketfunc()">
+               <input type="reset" class="btn" value="Отправить"></input>
+               <span class="popup_verh" id="mypopup">Ваша заявка отправлена</span>
+            </div>
+         </form>
+         </div>
+      </main>
+      <section class="section_about_cards">
+         <div class="containers"></div>
+         <div class="wrapper">
+            <a href="HTML/summer_destinations.html">
+               <div class="card">
+
+                  <div class="container"></div>
+                  <h1 class="title_card">Летние направления</h1>
+                  <div class="btn_card">
+                     <button class="btn">
+                        <img src="IMG/icons/Arrow.svg" alt="arrow">
+                     </button>
+                  </div>
+
+               </div>
+            </a>
+            <a href="HTML/winter destination.html">
+               <div class="card card_two">
+
+                  <div class="container"></div>
+                  <h1 class="title_card">Зимние направления</h1>
+                  <div class="btn_card">
+                     <button class="btn">
+                        <img src="IMG/icons/Arrow.svg" alt="arrow">
+                     </button>
+                  </div>
+
+               </div>
+            </a>
+         </div>
+      </section>
+      <section class="stocks">
+         <div class="wrapper">
+            <h1 class="title_stocks">
+               Акции
+            </h1>
+            <div class="blocks_stocks">
+               <div class="stock">
+                  <div class="block"><img src="IMG/stocksOne.svg" alt="stock"></div>
+                  <div class="text">
+                     <h2 class="title_stock">Актуальные тарифы</h2>
+                     <p class="description_stock">Быстрые и качестве-
+                        нные перелёты</p>
+                  </div>
+               </div>
+               <div class="stock">
+                  <div class="block two"><img src="IMG/stocksTwo.svg" alt="stock"></div>
+                  <div class="text">
+                     <h2 class="title_stock">Семейный счёт</h2>
+                     <p class="description_stock">Объединяйтесь и
+                        экономьте</p>
+                  </div>
+               </div>
+               <div class="stock">
+                  <div class="block tree"><img src="IMG/stocksTree.svg" alt="stock"></div>
+                  <div class="text">
+                     <h2 class="title_stock">Miles & Cash</h2>
+                     <p class="description_stock">Мили = Деньги</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="news">
+         <div class="container">
+            <img src="IMG/icons/Ellipse 7.svg" alt="Ellipse">
+         </div>
+         <div class="wrapper">
+            <h1 class="title_news">
+               Новости
+            </h1>
+            <div class="blocks_news">
+               <div class="new">
+                  <h1 class="title_new">
+                     Meridian Airlines стала лауреатом
+                     премии Skyway Service Award
+                  </h1>
+                  <p class="description">
+                     Пассажиры признали лучшими онлайн-сер-
+                     висы Meridian Airlines, сервис авиакомпании
+                     в экономическом классе на внутренних, а также
+                     международных воздушных линиях.
+                  </p>
+                  <div class="date">
+                     3 Мар. 2022
+                  </div>
+               </div>
+               <div class="new">
+                  <h1 class="title_new">
+                     Самолёты компании Meridian Airlines
+                     перевезли рекордное количество
+                     пассажиров
+                  </h1>
+                  <p class="description">
+                     За 2021 год услугами авиакомпании Meridian
+                     Airlines возпользовались рекордные 20 430 694
+                     человека
+                  </p>
+                  <div class="date">
+                     6 Янв. 2022
+                  </div>
+               </div>
+               <div class="new">
+                  <h1 class="title_new">
+                     Meridian Airlines вошла в топ-30
+                     лучших авиакомпаний мира
+                  </h1>
+                  <p class="description">
+                     Аналитики составили рейтинг лучших авиаком-
+                     паний мира по безопасности и комфорту
+                     для пассажиров.
+                  </p>
+                  <div class="date">
+                     2 Фев. 2022
+                  </div>
+               </div>
+               <div class="new">
+                  <h1 class="title_new">
+                     Meridian Airlines стала лауреатом
+                     премии Skyway Service Award
+                  </h1>
+                  <p class="description">
+                     Пассажиры признали лучшими онлайн-сер-
+                     висы Meridian Airlines, сервис авиакомпании
+                     в экономическом классе на внутренних, а также
+                     международных воздушных линиях.
+                  </p>
+                  <div class="date">
+                     3 Мар. 2022
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <form class="help_center">
+         <div class="wrapper">
+            <div class="form">
+               <h1 class="title_form">
+                  Справочный центр
+               </h1>
+               <p class="description">Оставь заявку и мы ответим</p>
+               <div class="inputs">
+                  <input type="text" placeholder="Имя" value="">
+                  <input type="text" placeholder="Телефон" value="">
+                  <input type="text" placeholder="Почта" value="">
+               </div>
+               <div class="btn_form" onclick="questionfunc()">
+                  <input type="reset" class="btn" value="Отправить"></input>
+                  <span class="popup_niz" id="mpopup">Ваша заявка отправлена</span>
+                  <!-- <input type="reset" class="btnres" value="Очистить"></input> -->
+                  
+               </div>
+
+            </div>
+         </div>
+      </form>
+      <footer class="footer">
+         <div class="wrapper">
+            <div class="logo">
+               <a href="index.html">
+                  <img src="IMG/logo.svg" alt="logo" />
+                  <h1 class="header_logo_title">Meridian Airlines</h1>
+               </a>
+            </div>
+            <div class="footer_nav">
+               <ul>
+                  <li>
+                     <img src="IMG/icons/viber.svg" alt="whatsapp">
+                     <p>+375 (29) 851 63 90</p>
+                  </li>
+                  <li>
+                     <img src="IMG/icons/telegram.svg" alt="telegram">
+                     <p>+375 (29) 851 63 90</p>
+                  </li>
+                  <li>
+                     <img src="IMG/icons/telegram.svg" alt="telegram">
+                     <p>Телеграм-бот MeridianAir</p>
+                  </li>
+                  <div class="message"><img src="IMG/icons/message.svg" alt="message">
+                     <p>office@meridianair.com</p>
+                  </div>
+               </ul>
+               <div class="support">
+                  <div class="message"><img src="IMG/icons/message.svg" alt="message">
+                     <p>office@meridianair.com</p>
+                  </div>
+                  <div class="icons">
+                     <a href="https://vk.com/feed"> <img src="IMG/icons/BlueVK.svg" alt="VK"></a>
+                     <a href="https://www.instagram.com/"> <img src="IMG/icons/BlurInstagram.svg" alt="instagram">
+                     </a>
+                     <a href="https://www.facebook.com/"> <img src="IMG/icons/BlueFacebook.svg" alt="facebook"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="JS/main.js"></script>
+</body>
+
+</html>
