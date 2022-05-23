@@ -99,3 +99,13 @@ modalOverlay.addEventListener('click', (e) => {
     modalOverlay.classList.remove('modal-overlay--visible');
   }
 });
+
+function questionfunc() {
+  var popup = document.getElementById("mpopup");
+  popup.classList.toggle("show");
+}
+
+function ticketfunc() {
+  var popup = document.getElementById("mypopup");
+  popup.classList.toggle("show");
+}
